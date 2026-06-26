@@ -71,4 +71,5 @@ else:
     if to_curr not in validated_data.rates:
         print(f"Target Currency not found.")
     else:
+        print(f"Exchange Rate: 1 {from_curr} = {validated_data.rates[to_curr]:.2f} {to_curr}")
         print(f"{amount} {from_curr} = {amount * validated_data.rates[to_curr]:.2f} {to_curr}")
